@@ -310,6 +310,7 @@ $Data{"Body"}
                     <td>
                       <dtl if ($Data{"AgentPhone"} ne "0") { $Data{"AgentPhoneStrg"} = "<li><a href="$Env{"Baselink"}Action=AgentTicketPhoneOutbound&TicketID=$Data{"TicketID"}&QueueID=$Data{"QueueID"}" onmouseover="window.status='$JSText{"Phone call"}'; return true;" onmouseout="window.status='';">$Text{"Phone call"}</a></li>"; }>
 $Data{"AgentPhoneStrg"}
+		      <li style="list-style-type: circle"><a href="$Env{"Baselink"}Action=AgentTicketBounce&TicketID=$Data{"TicketID"}&ArticleID=$Data{"ArticleID"}&QueueID=$Data{"QueueID"}&Subaction=Store&BounceTo=spam@sos.indymedia.org&BounceStateID=2&InformSender=0" onmouseover="window.status='Spam'; return true;" onmouseout="window.status='';">Report as Spam</a></li>
                     </td>
                   </tr>
                 </table>
