@@ -460,7 +460,7 @@ $Data{"AgentPhoneStrg"}
 		<tr>
 		  <td>
 		    <li>
-		    <a href="$Env{"Baselink"}Action=AgentTicketBounce&TicketID=$Data{"TicketID"}&ArticleID=$Data{"ArticleID"}&QueueID=$Data{"QueueID"}&Subaction=Store&BounceTo=spam@sos.indymedia.org&BounceStateID=2&InformSender=0" onmouseover="window.status='Spam'; return true;" onmouseout="window.status='';">Report as Spam</a>
+		    <a href="$Env{"Baselink"}Action=AgentTicketBounce&TicketID=$Data{"TicketID"}&ArticleID=$Data{"ArticleID"}&QueueID=$Data{"QueueID"}&Subaction=Store&BounceTo=$Config{"SpamBounceAddress"}&BounceStateID=2&InformSender=0" onmouseover="window.status='Spam'; return true;" onmouseout="window.status='';">Report as Spam</a>
 		  </td>
 		</tr>
               </table>
