@@ -17,48 +17,12 @@ Authors:
 * Simon Josi <josi+famfamfam(at)puzzle.ch>
 * Marcel Haerry <haerry+famfamfam(at)puzzle.ch>
 
+Compatible with OTRS 2.3 and 2.4 only (not 3.0+).
+
 Installation
 ------------
 
-This theme contains the following 4 folders:
-
-* css
-* images
-* js
-* html
-
-You have to copy them to the following locations:
-
-html: ::
-
-  mkdir -p <your otrs installation>/Kernel/Output/HTML
-  cp -a html <your otrs installation>/Kernel/Output/HTML/FamFamFam
-
-css: ::
-
-  mkdir -p <your otrs installation>/var/httpd/htdocs/css
-  cp -a css  <your otrs installation>/var/httpd/htdocs/css/FamFamFam
-
-images: ::
-
-  mkdir -p <your otrs installation>/var/httpd/htdocs/images
-  cp -a images <your otrs installation>/var/httpd/htdocs/images/FamFamFam
-
-js: ::
-
-  mkdir -p <your otrs installation>/var/httpd/htdocs/js
-  cp -a js <your otrs installation>/var/httpd/htdocs/js/FamFamFam
-
-Additionally you have to register your theme in the otrs database. For MySQL
-this can look like:
-::
-
-  mysql otrs
-  mysql> INSERT INTO theme
-    ->     (theme, valid_id, create_time, create_by, change_time, change_by)
-    ->     VALUES
-    ->     ('FamFamFam', 1, current_timestamp, 1, current_timestamp, 1);
-  mysql>
+Change path to OTRS installation directory in `install.sh` script and run it.
 
 Now the new theme should be useable in OTRS. It should be possible to select
 it via your personal preferences page. For further information about a custom
