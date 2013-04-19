@@ -8,6 +8,8 @@ of FamFamFam_ and was inspired by the default layout of Redmine_.
 It introduces some Javascript enhancements to make the overview of
 tickets collapsed.
 
+Compatible with OTRS 2.3 and 2.4 only (not 3.0+).
+
 The theme is released under GPL_ Version 3 (See COPYING for more infos),
 FamFamFam icons are licensed under a `Creative Commons Attribution 2.5 License`_
 for further information have a look at `FamFamFam About`-Page.
@@ -17,12 +19,10 @@ Authors:
 * Simon Josi <josi+famfamfam(at)puzzle.ch>
 * Marcel Haerry <haerry+famfamfam(at)puzzle.ch>
 
-Compatible with OTRS 2.3 and 2.4 only (not 3.0+).
-
 Installation
 ------------
 
-Change path to OTRS installation directory in `install.sh` script and run it.
+Change path to OTRS installation directory in ``install.sh`` script and run it.
 
 Now the new theme should be useable in OTRS. It should be possible to select
 it via your personal preferences page. For further information about a custom
